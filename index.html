@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <title>Registrarse</title>
+</head>
+<body>
+  <div class="container">
+    <div class="Registro">
+     
+      <h1>Registro</h1>
+      <form action="" method="post">
+        <div class="inputgroup">
+        <div class="inputbox" id="nameinput">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" id="name" placeholder="Ingrese su nombre completo "required/>
+        </div>
+        <div class="inputbox">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" id="email" placeholder="Ingrese su correo" required/>
+        </div>
+        <div class="inputbox">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" id="password" placeholder="Ingrese una contraseña" required/>
+        </div>
+        <div class="inputbox">
+          <i class="fa-solid fa-check"></i>
+          <input type="password" id="conf-password" placeholder="Confirme su contraseña" required/>
+          <span id="password-message" class="error-message"></span>
+        </div>
+          <p>Ya tienes una cuenta?<a href="../Login/login.html">Ingresa aquí</a></p>          
+        </div>
+        <div>
+          <button id="signup"type="submit"><i class="fa-solid fa-paper-plane"></i>Registrarse</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="registro.js"></script>
+</body>
+</html>
